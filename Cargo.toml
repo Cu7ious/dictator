@@ -1,0 +1,13 @@
+[package]
+name = "dictator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+whisper-rs = "0.14"
+cpal = "0.15"
+rdev = "0.5"
+enigo = "0.2"
+toml = "0.8"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
