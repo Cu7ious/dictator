@@ -1,0 +1,25 @@
+[general]
+hotkey = "AltGr"
+
+[audio]
+min_duration_secs = 0.5
+silence_threshold = 0.01
+
+[model]
+# Download not yet implemented. Set path manually.
+path = "./models/ggml-large-v3-turbo.bin"
+unload_timeout_mins = 10
+
+[whisper]
+language = "auto"
+# Your languages, e.g.,
+initial_prompt = "Текст українською & in English."
+beam_size = 5
+suppress_blank = true
+no_speech_threshold = 0.6
+
+[sounds]
+enabled = true
+record_delay_ms = 300
+start = "/System/Library/Sounds/Ping.aiff"
+stop = "/System/Library/Sounds/Pop.aiff"

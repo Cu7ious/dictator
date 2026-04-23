@@ -1,1 +1,12 @@
 /target
+*.bin
+
+*.md
+!README.md
+!**/README.md
+
+config.toml
+
+# Just for now
+/assets
+.claude/

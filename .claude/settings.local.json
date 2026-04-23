@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cargo fetch *)"
+      "Bash(cargo fetch *)",
+      "Bash(cargo run *)",
+      "Bash(cargo build *)",
+      "Bash(./target/debug/dictator *)"
     ]
   }
 }

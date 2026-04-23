@@ -4,10 +4,15 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-whisper-rs = "0.14"
-cpal = "0.15"
+whisper-rs = { version = "0.16", features = ["metal"] }
+cpal = "0.17.3"
 rdev = "0.5"
-enigo = "0.2"
-toml = "0.8"
+arboard = "3"
+core-graphics = "0.25.0"
+tray-icon = "0.22.1"
+toml = "1.1.2"
+dirs = "6"
+clap = { version = "4", features = ["derive"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
 serde = { version = "1", features = ["derive"] }
 tokio = { version = "1", features = ["full"] }
